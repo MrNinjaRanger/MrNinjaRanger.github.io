@@ -17,10 +17,27 @@
 
 
 
-            var sum = 5;
+            var tallListe = ["Per Karlsen", "Abdisalam Yarow"];
+            var tekst = "";
+
+            for (var i = 0; i < tallListe.length; i++){
+                tekst += " Element nr " + i + " er " + tallListe[i] + "<br>";
+        }
+
+        var wukongliste = [];
+        wukongListe[0] = ["Crushing blow", "Warrior Trickster", "Nimbus Strike", "Cyclone"]
+        wukongListe[1] = ["Q", "W", "E", "R"]
+        wukongListe[2] = [120, 0, 55, 412]
+        
 
 
-            //Programkode her 
+
+        var navnString = "Halvard Per Ole Sigurd Allen";
+        var navnListe = navnString.split (" ");
+        navnListe.sort();
+        var navnSortert = navnListe.join(" ");
+        document.getElementById(utskrift).innerHTML = navnSortert;
+        // Allan Halvard Ole Per Sigurd
 
         }
 

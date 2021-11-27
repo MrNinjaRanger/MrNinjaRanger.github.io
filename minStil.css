@@ -1,0 +1,44 @@
+/* 04 */
+
+h1 {
+	font-family: Calibri, Arial;
+	color: blue;
+	
+}
+
+h2 {
+	font-family: Consolas, Arial;
+	font-style: oblique;
+	
+}
+
+p {
+	font-family: Calibri, Arial;
+	color: turquoise;
+	
+}
+
+
+/* 05 */
+
+a:hover {
+	color: blue;
+	background: green;
+}
+
+.ramme {
+	border-color: black;
+	border-width: 10px;
+	border-style: solid;
+	text-align: center;
+}
+
+/* 06 */
+
+#gråbakgrunn {
+	border-color: black;
+	border-width: 10px;
+	border-style: solid;
+	text-align: center;
+	background-color: black;
+}

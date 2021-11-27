@@ -3,7 +3,7 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" type="text/css" href="at.css" />
         
     <meta charset="utf-8"  />
 
@@ -14,17 +14,9 @@
 
 
 
-        window.onload = oppstart;
-
-
-
-        function oppstart() {
-
-          
-
-        }
-
-
+       
+        
+           
 
     </script>
 
@@ -41,17 +33,22 @@
 
 <body>
     <main>
+        <div id="gråbakgrunn">
         <h1>6-Arrayer</h1>
+
         <p>Her er en kort gjennomgang gjennom kapittel 6 i boka.</p>
+        </div>
     </main>
+    <div class="ramme">	
     <h2>Hva er Arrayer?</h2>
+    
     <p>Array er rett og slett en måtte lagre flere verdier under det samme navnet. Vi kan starte med å sammenligne
         arrayer og variabler. En variable vil da se ut wsoim bilde under. Det den gjør er at variabelen sum vil ha
         verdien 5. Denne type variabel kan bare holde en verdi om gangen <br>
         <img src="eksempel1.jpg" width="400" alt="Variable">
     <p>
         Men med en arrayer kan vi variablen sum mer verdier. Da vil det se slikk ut!<br>
-        <img src="eksempel2.jpg" alt="array">
+        <img src="eksempel2.jpg" alt="array"><br>
         Noen av fordelene arrayer kan ha er foreksempel vis et firma som monsternett skal sortere kundene sine i to som
         eksempel de som har fiber og de som ikke har. Isteden for å skrive det som det her. <br>
     <pre>
@@ -65,43 +62,71 @@
     Hadde det kanskje vært lettere å bruke array til sortere det og gjøre det letere å sette opp og få det til å se sånn
     ut.
 
-    <pre>
-            var fiberkundeListe = ["Per Karlsen", "Abdisalam Yarow"]
-            var KundeListe = ["John Doe", "Filip Strong"]
+       <pre>
+            var fiberkundeListe = ["Per Karlsen", "Abdisalam Yarow"];
+            var KundeListe = ["John Doe", "Filip Strong"];
         </pre>
     </p>
+</div>
+     
+   
 
-
-
-
+<div class="ramme">	
     <h3>Forløkker og arrayer</h3>
+    <p>Array kan bli brukt i mange elementer som for eksempel en for-løkke. Med bruk av for-løkke kan vi skrive ut alle elementene i arrayen. <br>
+    en kodesnutt vil se sånn ut<br>
+    <img src="eksempel3.jpg" width = "400 "alt="forløkker">
+    
+    </p>
+    
 
-    litt om
+    
 
-    code snutt
-
-    kjør
-
-    big exmpl
 
     <h2>Array-funksjoner</h2>
 
-    <p>litt om</p>
+    <p>Arrayer har noen funskjoner som kan bli brukt til å manipulere på verdiene i orginale arrayen<br>
+    som foreksempel.</p>
+    
+<pre>
+splice(spliceindex, antall)- sletter antall elementer fra startindex.
+push(verdi)- legger til et element i slutten av arrayen og setter innholdet lik verdi.
+pop()- fjerner det siste elementet i arrayen og gir tilbake verdien som resultat
+</pre>
+<p>her er noen eksempler som viser hvordan de kan bli brukt.</p>
 
-    code snutt
-    Explain
-    kjør
-    explain hva den gjorde
-
+<pre>
+    var minArray = [3, 12, 24, 36, 48];
+    
+    minArray.push(60)
+    
+    minArray.splice(2, 12);
+</pre>
+</div>
+    
+<div class="ramme">	
     <h2>Flerdimemsjonale arrayer</h2>
-    <p>Explain</p>
-    vis code
-    forklar
-    ogps vis
+    <p>Flerdimemsjonale arrayer lar oss lage en array som inneholder andre arrays. Dette kan bli brukt til å lage verdier i tabelform.<br>
+    En slikk array vil se sånn ut. <br>
+    <img src="eksempel4.jpg" width="400" alt="flerdimensjonale arrayer">
+    </p>
+    
 
-    <h2>assosiative arrayer</h2>
+    <h2>Assosiative arrayer</h2>
+    <p>Assosiative arrayer er array som bruker navn isteden for den standard nummer eller indeksen. Med dette kan vi ha en samling av arrays med ulike verdier.<br>
+    Du kan lage en assosiative array sånn her</p>
+    <pre>
+        var personinfo = {fornavn: "Yahye" etternavn: "Saleban" alder: "17"}
+        </pre>
 
-    <h2>tekst strenger og arrayer</h2>
+    <h2>Tekst strenger og arrayer</h2>
+    <p>Tekststrenger kan sees på som en form for arrayer der hvert element er ett tegn og vi kan lett<br>
+        konvertere mellom en verdi av typen string og en array. Ønsker vi foreksempel å sortere en Tekststreng,<br>
+        kan vi konvertere den til en array også bruke sort-metoden.<br>
+        <img src="eksempel5.jpg" width="400" alt="tekstrenge+array">
+    
+    </p>
+    </div>	
 
 </body>
 
